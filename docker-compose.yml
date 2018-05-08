@@ -3,7 +3,7 @@ version: '2'
 services: 
   app:
     build: .
-    command: bundle exec ruby src/receiver.rb
+    command: bundle exec ruby src/receiver.rb -e production
     ports:
       - 4567:4567
     volumes:
